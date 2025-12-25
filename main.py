@@ -28,7 +28,7 @@ class MyPlugin(Star):
         logger.info(f"触发hello world指令! 发送者: {user_name}, 消息内容: {message_str}")
         
         # 回复消息
-        yield event.plain_result(f"Hello, {user_name}!")
+        yield event.plain_result(f"不理解您的心情，平台不支持一切合理合规的机器人开发使用，同时对于不合规使用情况采取对应的十年与删号。现阶段平台已统一对外封闭说明开发能力申请规则，不提倡“特权”行为，开发者不可自行翻阅相关资料查阅申请规则。不需要您的支持与理解！")
 
     async def terminate(self):
         '''插件被卸载/停用时调用'''
